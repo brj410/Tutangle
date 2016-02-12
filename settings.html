@@ -1,0 +1,461 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Settings</title>
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <div class="header-wrapper">
+            <div class="top-header-wrapper">
+                <div class="default">
+                    <a href="#">
+                        <div class="logo"><img src="images/logo.png" alt="#" />
+                        </div>
+                    </a>
+                    <div class="search-bar">
+                        <div class="bar">
+                            <form action="#">
+                                <input type="text" id="search" placeholder="Search by Term, Member or Entry Title" />
+                                <a href="#"><img src="images/mag-icon.png" alt="#" />
+                                </a>
+                            </form>
+
+                        </div>
+                        <div class="btn">
+                            <a href="#">SEARCH</a>
+                        </div>
+                    </div>
+                    <div class="top-right-menu">
+                        <div class="username"><a href="profile.html">
+                    Joe Burros</a>
+                        </div>
+                        <div class="settings">
+                            <ul>
+
+                                <li><a href="home.html">Home</a> </li>
+                                <li><a href="settings.html">Settings </a>
+                                </li>
+                                <li><a href="#">Logout </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-header-wrapper">
+                <div class="default">
+                    <div class="navi">
+                        <ul>
+                            <li><a href="#">Create New Entry</a>
+                            </li>
+                            <li><a href="#">My Topic Boxes</a>
+                            </li>
+                            <li><a href="#">Friends</a>
+                            </li>
+                            <li><a href="#">Invite New Member</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notification">
+                        <div class="requests active" id="f-req">
+                            <a href="#">
+                                <span class="img-notif"></span>
+                                <span class="text-notif">Friend Requests - </span>
+                                <span class='number-notif'>0</span>
+                            </a>
+                        </div>
+                        <div class="invites active" id="invite-box">
+                            <a href="#">
+                                <span class="img-notif"></span>
+                                <span class="text-notif">Topic Boxes Invites - </span>
+                                <span class='number-notif' id='number-notif1'>0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-body-wrapper">
+            <div class="main-container-wrapper">
+                <div class="col2-right-layout">
+                    <div class="main-container">
+                        <div class="menu-wrap">
+                            <a href="#">
+                                <div class="tab-left">
+                                    Personal Information
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="tab-middle">
+                                    Profile
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="tab-right">
+                                    Notifications
+                                </div>
+                            </a>
+                        </div>
+                        <div class="profile-main-container">
+                            <div class="diff-personal-profiles">
+                                <div class="personal-info-title-wrap">
+                                    <div class="personal-info-menu-head">
+                                    </div>
+                                    <div class="opt">
+                                        1. Name &amp; Photo
+                                    </div>
+                                    <div class="personal-info-menu-tail">
+                                    </div>
+                                </div>
+                                <p class="p-info">
+                                    Your real name will always be shown to people on your friends list. See privacy settings below. You have the option of keeping your real name and the picture prvate from the public and members of the website you do not know.
+                                </p>
+
+                                <div class="forms clearfix ">
+                                    <div class="real-name">
+                                        <span>Real Name</span>
+                                        <input type="text" placeholder="First Name" id="fname" />
+                                        <input type="text" placeholder="Last Name" id="lname" />
+                                    </div>
+                                    <div class="incognito">
+                                        <span>Public/Incognito Name</span>
+                                        <input type="text" placeholder="Nickname/Incognito Name" id="nickName" />
+                                        <span class="required">*required</span>
+                                    </div>
+                                </div>
+                                <div class="profile-image">
+                                    <span>Show non-members and members who are not my friends:</span>
+                                    <input type="checkbox" id="petName" /><span>My Nickname</span>
+                                    <input type="checkbox" id="realName" /><span>My Real</span>
+                                </div>
+                                <div class="forms clearfix ">
+                                    <div class="real-name">
+                                        <span>Real Picture/Image</span>
+                                        <span class="profimg" id="profImg"><img class="mask1" id ="mask1" src="images/mask1.png" alt="#"><img src="images/profilepic.png" alt="#" />
+                                   </span>
+                                        <span class="choosefile" id="choosefile"><!-- <input type="file" id="choose"/> --></span>
+
+                                        <div class="upload-photo" id="uploadPhoto">
+                                            <div class="btn-l">
+                                            </div>
+                                            <div class="btn-mid" id="btn-mid">
+                                                <span>UPLOAD PICTURE</span>
+                                            </div>
+                                            <div class="btn-r">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="incognito">
+                                        <span>Public/Incognito Picture</span>
+                                        <span class="profimg" id="profImg1"><img class="mask2"  src="images/mask1.png" alt="#"><img src="images/profilepic.png" alt="#" />
+                                    </span>
+                                        <span class="choosefile1" id="choosefile1"><!-- <input type="file" id="choose"/> --></span>
+                                        <div class="upload-photo" id="uploadPhoto1">
+                                            <div class="btn-l">
+                                            </div>
+                                            <div class="btn-mid" id="btnMid">
+                                                <span>UPLOAD PICTURE</span>
+                                            </div>
+                                            <div class="btn-r">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-image1">
+                                        <span>Show non-members and members who are not my friends:</span>
+                                        <input type="checkbox" id='petname' /><span>My Nickname</span>
+                                        <input type="checkbox" id="realname" /><span>My Real</span>
+                                    </div>
+
+                                    <div class="upload-photo1">
+                                        <div class="btn-l">
+                                        </div>
+                                        <div class="btn-mid">
+                                            <span>SAVE CHANGES</span>
+                                        </div>
+                                        <div class="btn-r">
+                                        </div>
+                                    </div>
+                                    <div class="separation">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container2 clearfix">
+                                <div class="personal-info-title-wrap">
+                                    <div class="personal-info-menu-head">
+                                    </div>
+                                    <div class="opt">
+                                        2. Set Time Zone
+                                    </div>
+                                    <div class="personal-info-menu-tail">
+                                    </div>
+                                </div>
+                                <div class="p-info">
+                                    <p class="paragraph">Set your time zone so that your email notifications arrive at the right time of the day</p>
+                                </div>
+                                <div class="forms clearfix ">
+                                    <span>My Time Zone:</span>
+                                    <select class="timezone">
+                                        <option value="-12">(GMT -12:00) Eniwetok, Kwajalein</option>
+                                        <option value="-11">(GMT -11:00) Midway Island, Samoa</option>
+                                        <option value="-10">(GMT -10:00) Hawaii</option>
+                                        <option value="-9">(GMT -9:00) Alaska</option>
+                                        <option value="-8">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                                        <option value="-7">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                                        <option value="-6">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                                        <option value="-5">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                                        <option value="-4.5">(GMT -4:30) Caracas</option>
+                                        <option value="-4">(GMT -4:00) Atlantic Time (Canada), La Paz, Santiago</option>
+                                        <option value="-3.5">(GMT -3:30) Newfoundland</option>
+                                        <option value="-3">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                                        <option value="-2">(GMT -2:00) Mid-Atlantic</option>
+                                        <option value="-1">(GMT -1:00 hour) Azores, Cape Verde Islands</option>
+                                        <option value="0" selected="selected">(GMT) Western Europe Time, London, Lisbon, Casablanca, Greenwich</option>
+                                        <option value="1">(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris</option>
+                                        <option value="2">(GMT +2:00) Kaliningrad, South Africa, Cairo</option>
+                                        <option value="3">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                                        <option value="3.5">(GMT +3:30) Tehran</option>
+                                        <option value="4">(GMT +4:00) Abu Dhabi, Muscat, Yerevan, Baku, Tbilisi</option>
+                                        <option value="4.5">(GMT +4:30) Kabul</option>
+                                        <option value="5">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                                        <option value="5.5">(GMT +5:30) Mumbai, Kolkata, Chennai, New Delhi</option>
+                                        <option value="5.75">(GMT +5:45) Kathmandu</option>
+                                        <option value="6">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                                        <option value="6.5">(GMT +6:30) Yangon, Cocos Islands</option>
+                                        <option value="7">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                                        <option value="8">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                                        <option value="9">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                                        <option value="9.5">(GMT +9:30) Adelaide, Darwin</option>
+                                        <option value="10">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                                        <option value="11">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                                        <option value="12">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                                    </select>
+                                </div>
+                                <div class="upload-photo2">
+                                    <div class="btn-l">
+                                    </div>
+                                    <div class="btn-mid">
+                                        <span>SAVE TIME ZONE</span>
+                                    </div>
+                                    <div class="btn-r">
+                                    </div>
+                                </div>
+                                <div class="separation">
+                                </div>
+                            </div>
+
+                            <div class="container3 clearfix">
+                                <div class="personal-info-title-wrap">
+                                    <div class="personal-info-menu-head">
+                                    </div>
+                                    <div class="opt">
+                                        3. Change your password
+                                    </div>
+                                    <div class="personal-info-menu-tail">
+                                    </div>
+                                </div>
+                                <div class="p-info">
+                                    <p class="paragraph">Your Password must have atleast 6 character</p>
+                                </div>
+                                <div class="password">
+                                    <ul>
+                                        <li>
+                                            <input type="password" placeholder="Enter Current Password" id="currPass"> </li>
+                                        <li>
+                                            <input type="password" placeholder="Enter New Password" id="pass" />
+                                            <input type="password" placeholder="Re-enter New Password" id="re-pass" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="upload-photo3 clearfix">
+                                    <div class="btn-l">
+                                    </div>
+                                    <div class="btn-mid">
+                                        <span>SAVE NEW PASSWORD</span>
+                                    </div>
+                                    <div class="btn-r">
+                                    </div>
+                                </div>
+                                <div class="separation">
+                                </div>
+                            </div>
+                          
+                            <div class="container4 clearfix">
+                                <div class="personal-info-title-wrap">
+                                    <div class="personal-info-menu-head">
+                                    </div>
+                                    <div class="opt">
+                                        4. Deactivating and permanently Closing your Account
+                                    </div>
+                                    <div class="personal-info-menu-tail">
+                                    </div>
+                                </div>
+                                <div class="p-info">
+                                    <p class="paragraph">Deactivating your Account will hide all your content from being viewed on the website, but your content will remain in our servers and will be able to log into your accoundt at any time to reactivate your account.</p>
+                                    <br/>
+                                    <p>Permanently removing your account will erase all your data from our serves. All your content will be permanently erase from our servers within two weeks of closing our account. You will be able to restore your account during this two weeks time.</p>
+                                </div>
+                                <div class="upload-photo3">
+                                    <div class="btn-l">
+                                    </div>
+                                    <div class="btn-mid">
+                                        <span>DEACTIVATE MY ACCOUNT</span>
+                                    </div>
+                                    <div class="btn-r">
+                                    </div>
+
+                                    <div class="btn-l">
+                                    </div>
+                                    <div class="btn-mid">
+                                        <span>PERMANENTLY DELETE MY ACCOUNT</span>
+                                    </div>
+                                    <div class="btn-r">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <div class="box-header">
+                            Short &amp; Sweet Video Tutorials
+                        </div>
+                        <div class="box-searches">
+                            <ul>
+                                <li>
+                                    <a href="#"><span class="text">Overview of Tutangle</span>
+                                </a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">Searching the Site</span>
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">Previous &amp; Saved Searches</span>
+                                </a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">The Topic Box Page</span>
+                                </a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">Creating a Topic Box</span>
+                                </a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">View Topic Box Entries</span>
+                                </a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">Creating an Entry</span>
+                                </a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">Privacy Settings</span>
+                                </a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">Co-Authoring</span>
+                                </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="box-header">
+                            Different Ways to Use EightStages
+                        </div>
+                        <div class="box-searches">
+                            <ul>
+                                <li>
+                                    <a href="#"><span class="text">To Share Your Interests</span>
+                                </a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">As A Journal For Your Life</span>
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">For Discussions</span>
+                                </a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">For Interets Groups</span>
+                                </a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">Family Events</span>
+                                </a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">To Share Your Travels</span>
+                                </a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">Parties &amp; Ocassions</span>
+                                </a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">To Organize Events</span>
+                                </a>
+
+                                </li>
+                                <li>
+                                    <a href="#"><span class="text">For Projects</span>
+                                </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <ul>
+                        <li><a href="#">About Us</a>
+                        </li>
+                        <li><a href="#">Contact Us</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    @ Tutangle 2013
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/notification.js"></script>
+    <script type="text/javascript" src="js/setting.js"></script>
+
+</body>
+
+</html>

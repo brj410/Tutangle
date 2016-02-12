@@ -1,0 +1,306 @@
+@charset "utf-8";
+/* CSS Document */
+/*<----------------HEADER-------------------->*/
+
+.search-bar .bar form.input {
+    width: auto;
+}
+.notification {
+    font-size: 12px;
+}
+.invites .img-notif {
+    float: left;
+    width: 11px;
+    height: 15px;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 13px;
+    margin-right: 8px;
+    background: url('../images/invites.png');
+}
+.requests .img-notif {
+    float: left;
+    width: 17px;
+    height: 16px;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 8px;
+    background: url('../images/requests.png');
+}
+/*<-------------------SIDE PANELS-------------->*/
+
+.box-header {
+    font-size: 16px;
+    color: #FFF;
+}
+.box li {
+    font-size: 12px;
+}
+.box-searches li:hover {
+    background: #FFF;
+}
+.box-searches ul li a {
+    text-decoration: none;
+}
+/*<----------------CONTAINER---------------->*/
+
+.entry-header {
+    font-size: 24px;
+    font-family: Arial;
+}
+.row2 .row2-l:hover {
+    background: url('../images/active.png') no-repeat;
+    color: #FFF;
+}
+.row2 .row2-r:hover {
+    background: url('../images/active.png') no-repeat;
+    color: #FFF;
+}
+.main-list ul li {
+    float: left;
+    clear: both;
+    list-style: none;
+    border-bottom: 1px solid black;
+}
+.main-list ul li .img {
+    width: 70px;
+    min-height: 70px;
+    /*background:black;*/ 
+    display: block;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.main-list ul li .img .mask {
+    position: absolute;
+}
+..main-list ul li .img .pp {
+    position: relative;
+}
+.main-list ul li .info {
+    width: 439px;
+    margin-left: 9px;
+    min-height: 70px;
+    /*background:green;*/   
+    display: inline-block;
+    float: left;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.new-entry {
+    font-weight: bold;
+    color: #49a8ba;
+    display: block;
+}
+.topic {
+    /*font-size: 14px;*/
+    /*font-weight: bold;*/  
+    display: block;
+    line-height: 15px;
+}
+.writer {
+    display: block;
+}
+.user-name {
+    padding-right: 5px;
+    color: #4fb0c1;
+}
+.date {
+    border-left: 1px solid #000000;
+    padding-right: 5px;
+    padding-left: 6px;
+}
+.subscription {
+    border-left: 1px solid #000000;
+    padding-left: 5px;
+    color: #709722;
+}
+.user-topic-category {
+    display: block;
+}
+.topic-category {
+    color: #4fb0c1;
+}
+.topic-invite {
+    font-weight: bold;
+    color: #d43e1b;
+    display: block;
+}
+.tab-wrap:hover {
+    border-bottom: 2px solid #cceff5;
+}
+.tab-left,
+.tab-middle,
+.tab-right {
+    font-size: 18px;
+}
+.tab-left:hover {
+    /*box-shadow:0px 0px 4px 0px #7dd9e8;*/
+    background: #2fc1da;
+    color: #FFF;
+    border-bottom: 2px solid #cceff5;
+}
+.tab-middle:hover {
+    background: #2fc1da;
+    color: #FFF;
+    border-bottom: 2px solid #cceff5;
+}
+.tab-right:hover {
+    /*box-shadow:0px 0px 4px 0px #7dd9e8; */
+    
+    background: #2fc1da;
+    color: #FFF;
+    border-bottom: 2px solid #cceff5;
+}
+.tab-blocks{
+	display: none;
+}
+.diff-personal-profiles .p-text {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+}
+a .profile:hover {
+    background: url('../images/profile-active.png') no-repeat;
+    color: #FFF;
+}
+a .edit-profile:hover {
+    background: url('../images/setting-active.png') no-repeat;
+    color: #FFF;
+}
+.btn-sett-menu-wrap:hover .l-m {
+    background: url('../images/m-l.png');
+}
+.btn-sett-menu-wrap:hover .p-menu {
+    background: #78d8e4;
+    color: #FFF;
+}
+.btn-sett-menu-wrap:hover .r-m {
+    background: url('../images/m-r.png');
+}
+.real-name span {
+    font-size: 14px;
+    padding-bottom: 10px;
+    width: 229px;
+}
+.real-name img {
+    clear: both;
+}
+.incognito span {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.incognito .required {
+    color: red;
+}
+.mask1 {
+    position: absolute;
+    left: 0px;
+    top: 41px;
+}
+.mask2 {
+    position: absolute;
+    left: 90px;
+    top: 41px;
+}
+.mask3{
+	position: absolute;
+    left: 280px;
+    top: 157px;
+}
+#fname,#lname,#nickName {
+    width: 224px;
+    background: url('../images/inputtype.png') no-repeat;
+    border: 0px;
+    height: 26px;
+    padding-left: 5px;
+}
+#pass,#currPass,#re-pass {
+    background: url('../images/inputtype.png') no-repeat;
+    width: 224px;
+    border: 0px;
+    height: 26px;
+    text-align: left;
+    padding-left: 5px;
+}
+.real-name input {
+    border-collapse: collapse;
+}
+.btn-mid span {
+    font-size: 12px;
+    font-family: Arial;
+}
+.box span {
+    text-align: center;
+    padding-left: 5px;
+}
+.box span.acquaintance {
+    color: #93c7d2;
+}
+.boxImage .image1,
+.boxImage .image2 {
+    line-height: 124px;
+    padding-left: 19px;
+}
+.list-middle .text1 {
+    width: 108px;
+    display: inline-block;
+    /*display:block;*/  
+    height: 51px;
+    padding-top: 10px;
+    padding-left: 10px
+}
+.list-middle span.iImage {
+    float: right;
+    /*display: inline-block;*/
+    /*padding-top:30px;*/   
+    margin-right: 10px;
+    margin-top: 32px;
+    width: 22px;
+    height: 22px;
+    line-height: 21px;
+    background: url('../images/iImage.png') no-repeat;
+    display: none;
+}
+.list:hover .list-middle span.iImage {
+    background: url('../images/iImage.png') no-repeat 0 0;
+    /*display:inline-block;*/
+}
+.list-middle span.iImage:hover {
+    /* background:url('../images/iImage1.png') no-repeat; */
+}
+.mid-option .left {
+    float: left;
+    line-height: 29px;
+    font-size: 11px;
+    font-family: Arial;
+    padding-left: 11px;
+}
+.mid-option .right {
+    float: right;
+    line-height: 29px;
+    font-size: 11px;
+    font-family: Arial;
+    padding-right: 11px;
+}
+.tab-left:hover{
+	cursor: pointer;
+}
+.tab-middle:hover{
+	cursor: pointer;
+}
+.tab-right:hover{
+	cursor: pointer;
+}
+/*<-------------------FOOTER SECTION------------------------>*/
+
+.footer-container {
+    font-size: 10px;
+    color: #d4d4d4;
+}
+.footer-left a {
+    text-decoration: none;
+    color: #d4d4d4;
+}
